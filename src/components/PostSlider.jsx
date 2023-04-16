@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {BsChevronCompactLeft, BsChevronCompactRight} from "react-icons/bs";
+import {BsChevronCompactLeft, BsChevronCompactRight, BsEmojiLaughing, BsShare} from "react-icons/bs";
 
 import Logo from "../assets/images/cruise.png";
 import Logo2 from "../assets/images/280.jpg";
@@ -27,7 +27,8 @@ export function PostSlider() {
 
     return (
         <>
-            <div className=" m-auto py-16 px-4 relative group">
+
+            <div className=" m-auto py-4 px-4 relative group">
                 <div style={{backgroundImage: `url(${postelements[curr]})`}} className={`w-auto h-[400px] rounded-2xl bg-center bg-cover duration-500`}></div>
 
                 <div className={`hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer`}>
@@ -43,6 +44,15 @@ export function PostSlider() {
                         ))}
                     </div>
                 </div>
+            </div>
+
+            <div className="p-2 m-1">
+                <button onClick={prev} className={`p-1 m-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white `}>
+                    <BsEmojiLaughing size={20} />
+                </button>
+                <button onClick={next} className={`p-1 m-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white`}>
+                    <BsShare size={20} />
+                </button>
             </div>
         </>
     );

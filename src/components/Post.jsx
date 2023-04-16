@@ -7,7 +7,7 @@ export function Post(props) {
 
  return (
      <>
-         <div className="max-w-lg rounded overflow-hidden shadow-lg">
+         <div className="max-w-lg rounded overflow-hidden shadow-lg my-2">
 
              <div className="flex m-5">
                  <img className={`w-10 h-10 rounded-full`} src={PostOwner} alt="Post owner"/>
