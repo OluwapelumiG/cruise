@@ -13,7 +13,7 @@ export function Post(props) {
                  <img className={`w-10 h-10 rounded-full`} src={PostOwner} alt="Post owner"/>
                  <div className={`flex flex-col`}>
                      <h3>Post Owner</h3>
-                     <p>Laugh about this</p>
+                     <p>Laugh wan kee me </p>
                  </div>
              </div>
              {

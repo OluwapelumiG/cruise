@@ -93,7 +93,7 @@ export function Navbar() {
 
                 {/* Mobile / Bottom Navigation w-[370px] */}
                 <div className="fixed z-10 w-full object-bottom bottom-0 mobile:hidden">
-                    <div className="bg-[#569085] max-h-[4.4rem] px-6 rounded-t-xl">
+                    <div className="bg-[#569085] max-h-[2.4rem] px-6 rounded-t-xl">
                         <ul className="inline-flex relative m-auto justify-center w-full pb-4">
                         {/*<span*/}
                         {/*    className={`bg-rose-600 duration-500 ${Menus[active].mobdis} border-4 border-gray-900 h-16 w-16 absolute -top-5 rounded-full`}>*/}
@@ -105,9 +105,9 @@ export function Navbar() {
                             {
                                 Menus.map((menu, i) => (
                                     <li key={i} className="mx-auto">
-                                        <NavLink to={menu.to} className={`flex flex-col text-center pt-5 text-3xl ${active ===i ? 'border-t-4 border-double border-[#eab86e] rounder-t-lg' : '' }`}
+                                        <NavLink to={menu.to} className={`flex flex-col text-center pt-2 text-3xl ${active ===i ? 'border-t-4 border-double border-[#eab86e] rounder-t-lg' : '' }`}
                                                  onClick={() => setActive((i))}>
-                                            <span title={menu.name} className={`text-2xl cursor-pointer duration-500 ${active ===i ? 'text-[#eab86e]' : 'text-[#faf3ea]' } ${(menu.aid===3) ? "-mt-10 p-2 rounded-2xl text-4xl text-white bg-red-400" : ''} `}>
+                                            <span title={menu.name} className={`text-2xl cursor-pointer duration-500 ${active ===i ? 'text-[#eab86e]' : 'text-[#faf3ea]' } ${(menu.aid===3) ? "-mt-5 p-2 rounded-2xl text-2xl text-white bg-red-400" : ''} `}>
                                                 {menu.icon}
                                             </span>
                                         </NavLink>

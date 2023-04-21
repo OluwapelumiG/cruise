@@ -5,7 +5,7 @@ import {Outlet} from "react-router-dom";
 export function Main() {
     return (
         <div>
-            <div className="h-16">
+            <div className="h-12">
                 <Navbar />
             </div>
             <div className={`p-2 `}>

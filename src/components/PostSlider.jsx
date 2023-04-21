@@ -47,11 +47,24 @@ export function PostSlider() {
             </div>
 
             <div className="p-2 m-1">
-                <button onClick={prev} className={`p-1 m-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white `}>
-                    <BsEmojiLaughing size={20} />
+                <button onClick={prev} className={`p-2 m-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white `}>
+                    <div className="flex">
+                        <span className="inline-flex items-center justify-center w-4 h-4 ml-2 text-xs font-semibold text-blue-800 bg-blue-200 rounded-full my-auto">
+                            2
+                        </span>
+                        <BsEmojiLaughing size={20} />
+
+                    </div>
                 </button>
-                <button onClick={next} className={`p-1 m-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white`}>
-                    <BsShare size={20} />
+                <button onClick={next} className={`p-2 m-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white`}>
+                    <div className="flex">
+                        <span className="inline-flex items-center justify-center w-4 h-4 ml-2 text-xs font-semibold text-blue-800 bg-blue-200 rounded-full my-auto">
+                            2
+                        </span>
+                        <BsShare size={20} />
+
+                    </div>
+
                 </button>
             </div>
         </>

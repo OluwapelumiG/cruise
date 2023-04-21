@@ -4,7 +4,7 @@ import {FaSearch} from "react-icons/fa";
 export default function Searchbar(props) {
  return (
     <>
-        <form className="w-full max-w-xl">
+        <form className="w-full">
             <div className="flex items-center border-b border-teal-500 py-2">
                 <input
                     className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
