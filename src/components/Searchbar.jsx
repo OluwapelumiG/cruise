@@ -1,7 +1,7 @@
 import React from 'react';
 import {FaSearch} from "react-icons/fa";
 
-export default function Searchbar(props) {
+export default function Searchbar() {
  return (
     <>
         <form className="w-full">
